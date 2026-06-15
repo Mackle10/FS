@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nursery — School Portal</title>
+  <style>
+    :root{--red:#e53935;--blue:#1e88e5;--bg:#fff9f9;--card:#fff;--accent:#222}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;background:var(--bg);color:var(--accent)}
+    a:focus{outline:3px solid #ffd54f;outline-offset:3px}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:8px;top:8px;width:auto;height:auto;background:#000;color:#fff;padding:8px;z-index:1000}
+    .hero{display:flex;align-items:center;gap:18px;padding:28px;background:linear-gradient(90deg,var(--red),var(--blue));color:#fff}
+    .motto{font-style:italic;margin-top:6px;opacity:0.95}
+    .logo{width:64px;height:64px;border-radius:10px;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .wrap{max-width:900px;margin:28px auto;padding:0 18px}
+    h1{margin:0;font-size:24px}
+    p{margin:10px 0;color:#222}
+    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+    a.btn{display:inline-block;margin-top:14px;padding:10px 14px;background:var(--blue);color:#fff;border-radius:8px;text-decoration:none}
+    footer{margin-top:22px;color:#333;font-size:14px}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header role="banner" aria-label="Site header" style="display:flex;align-items:center;gap:16px;justify-content:space-between;padding:18px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div class="logo">Nur</div>
+      <div>
+        <h1 style="margin:0;font-size:18px">Fellowship Nursery School</h1>
+        <div style="font-size:13px;color:#fff;opacity:0.95">Fly Higher</div>
+      </div>
+    </div>
+    <nav aria-label="Primary">
+      <a class="btn" href="/index.html">Home</a>
+    </nav>
+  </header>
+
+  <main id="content" class="wrap" role="main">
+    <div class="card">
+      <p>Welcome to the Nursery section. This area contains information about our early years programme, daily routines, enrolment details, and teacher contacts.</p>
+
+      <div class="grid">
+        <div>
+          <h3>Daily Routine</h3>
+          <ul>
+            <li>9:00 — Arrival & free play</li>
+            <li>10:00 — Circle time</li>
+            <li>11:00 — Snack / outdoor play</li>
+            <li>12:30 — Nap / quiet time</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Enrolment</h3>
+          <p>Age range: 3–5 years. Contact admissions for enrolment forms and fees.</p>
+        </div>
+      </div>
+        <p><strong>Location:</strong> Bulyantete 2 — half a kilometre from Lugazi Town; 1.5 kilometres off the Lugazi–Jinja Highway, Buikwe District.</p>
+
+      <p><strong>Contact:</strong> +256767125295 · +256755923229</p>
+      <a class="btn" href="/index.html">Back to Home</a>
+    </div>
+
+    <footer role="contentinfo" style="margin-top:22px;color:#333;font-size:14px;display:flex;justify-content:space-between;align-items:center">
+      <small>Colors: red & blue (nursery theme). Placeholder logo used.</small>
+      <div><a href="https://maps.app.goo.gl/QY4J2edjP7GJe9ne9?g_st=iwb" target="_blank" rel="noopener">View on Google Maps</a></div>
+    </footer>
+  </main>
+</body>
+</html>

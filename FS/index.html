@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fellowship Schools</title>
+  <style>
+    :root{
+      --nursery:#e53935; /* red */
+      --primary:#1e88e5; /* blue */
+      --secondary-cream:#f5f0e1;
+      --secondary-blue:#1565c0;
+      --bg:#f7fafc;
+      --card-radius:12px;
+      --accent:#222;
+    }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:var(--accent);display:flex;align-items:center;justify-content:center;min-height:100vh}
+    a:focus{outline:3px solid #ffd54f;outline-offset:3px}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:8px;top:8px;width:auto;height:auto;background:#000;color:#fff;padding:8px;z-index:1000}
+    .wrap{max-width:900px;width:100%;padding:32px;text-align:center}
+    header{display:flex;align-items:center;gap:16px;justify-content:center;margin-bottom:24px}
+    .logo{width:64px;height:64px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:linear-gradient(45deg,var(--primary),var(--nursery));color:white;font-weight:700;font-size:22px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:#444;margin-top:8px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .card{padding:28px;border-radius:var(--card-radius);box-shadow:0 6px 18px rgba(16,24,40,0.06);text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:160px}
+    .nursery{background:linear-gradient(180deg,rgba(229,57,53,0.95),rgba(30,136,229,0.9));color:#fff}
+    .primary{background:linear-gradient(180deg,rgba(30,136,229,0.95),rgba(229,57,53,0.9));color:#fff}
+    .secondary{background:var(--secondary-cream);border:4px solid var(--secondary-blue);color:var(--secondary-blue)}
+    .card h2{margin:0 0 8px 0}
+    .card p{margin:0;font-size:14px;opacity:0.95}
+    footer{margin-top:28px;color:#333;font-size:14px}
+    @media(max-width:800px){.grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="wrap">
+    <header role="banner" aria-label="Site header" style="display:flex;align-items:center;gap:16px;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:16px">
+        <div class="logo">FS</div>
+        <div>
+          <h1 style="margin:0;font-size:20px">Fellowship Schools</h1>
+          <div style="font-size:13px;color:#444">Fly Higher</div>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="/index.html" style="text-decoration:none;color:inherit">Home</a>
+      </nav>
+    </header>
+
+    <main id="main" role="main">
+      <div class="grid">
+        <a class="card nursery" href="nursery/index.html">
+          <h2>Fellowship Nursery School</h2>
+          <p>Early years education and play-based learning.</p>
+        </a>
+        <a class="card primary" href="primary/index.html">
+          <h2>Fellowship Primary School</h2>
+          <p>Foundational curriculum for grades 1–7.</p>
+        </a>
+        <a class="card secondary" href="secondary/index.html">
+          <h2>Fellowship High School</h2>
+          <p>Upper-level curriculum and exam preparation.</p>
+        </a>
+      </div>
+    </main>
+
+    <footer role="contentinfo" style="margin-top:28px;color:#333;font-size:14px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+      <div>Contact: +256767125295 · +256755923229</div>
+      <div><a href="https://maps.app.goo.gl/QY4J2edjP7GJe9ne9?g_st=iwb" target="_blank" rel="noopener">View on Google Maps</a></div>
+    </footer>
+  </div>
+</body>
+</html>
